@@ -1,21 +1,17 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import NavBar from './ui/NavBar'
 
 class App extends Component {
   render() {
+    const logo = 'CLCode'
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">React && CaioDev</h1>
-        </header>
-        <p className="App-intro">
-          Here is our first component.
-        </p>
+      <div className="container">
+       <NavBar logo={logo}/>
       </div>
     );
   }
 }
 
-export default App;
+export default App; 
