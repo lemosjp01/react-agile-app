@@ -8,7 +8,7 @@ class App extends Component {
     const logo = 'CLCode'
     return (
       <div className="container">
-        <NavBar logo={logo}/>
+        <NavBar logo={logo} />
         {this.props.children}
       </div>
     );

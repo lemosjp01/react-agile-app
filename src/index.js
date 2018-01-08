@@ -7,7 +7,7 @@ import Backlog from './container/Backlog';
 import Sprints from './container/Sprints';
 import Home from './container/Home';
 import registerServiceWorker from './registerServiceWorker';
-import {Router, Route, IndexRoute, hashHistory} from 'react-router';
+import { Router, Route, IndexRoute, hashHistory } from 'react-router';
 
 ReactDOM.render(
     <Router history={hashHistory}>
@@ -18,6 +18,6 @@ ReactDOM.render(
             <Route path='/sprints' component={Sprints} />
         </Route>
     </Router>
-    , 
+    ,
     document.getElementById('root'));
 registerServiceWorker();
